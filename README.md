@@ -4,7 +4,7 @@
 
 3. Platform: Ubuntu 20.04.6
 
-4. In this assignment, I have implemented a simple network infrastructure, where a student/admin client queries the main server for an academic/departmental information, and the main server satisfies their query by obtaining the info from a collection of backend servers A, B and C.
+4. In this project, I have implemented a simple network infrastructure, where a student/admin client queries the main server for an academic/departmental information, and the main server satisfies their query by obtaining the info from a collection of backend servers A, B and C.
  
 5.student.cpp: Code that acts as the student client
 
@@ -34,6 +34,6 @@ Cs: displays the info
 
 
 
-7. I presume my system may fail, if a particular message exceeds 1000 characters. Also, I have designed the system to be case-sensitive wrt the handling of the department name (say if in the dataA.txt, there is a department ECE, but if the client inputs ece or eCE, it will fail to recognise that!). Also mainly, the main server gets the department list only once i.e after the startup of the backend servers and its own startup, thus to restart the system you must start the backend servers first and then the main server.
+7. I have designed my system to handle atmost 1000 characters. Also, I have designed the system to be case-sensitive wrt the handling of the department name (say if in the dataA.txt, there is a department ECE, but if the client inputs ece or eCE, it will fail to recognise that!). Also mainly, the main server gets the department list only once i.e after the startup of the backend servers and its own startup, thus to restart the system you must start the backend servers first and then the main server.
 
-8. I used Beej's Network Programming  and chatGPT primarily as references and to refine my code.
+8. References: Beej's Network Programming 
